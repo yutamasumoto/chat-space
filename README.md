@@ -3,7 +3,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user|reference|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 |group|reference|null: false, foreign_key: true|
 
 ### Association
@@ -39,8 +39,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user|reference|null: false, foreign_key: true|
-|group|reference|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 |message|text|
 |image|string|
 
@@ -50,7 +50,7 @@
 - belongs_to :group
 
 
-Things you may want to cover:
+
 
 * Ruby version
 
