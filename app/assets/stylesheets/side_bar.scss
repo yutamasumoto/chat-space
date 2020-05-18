@@ -1,7 +1,7 @@
 .SideBar {
      color:white;
      width:300px;
-    //  background-color: #333333;
+     
   &__Header{
      background-color:#253141;
      height:100px;
@@ -14,16 +14,15 @@
     height:20px;
     font-size: 16px;
     }
-    &__Icons{
+    &__Icon{
     display: flex;
     justify-content: end;
     list-style:none;
-    
-      li{
-        a{  
-          color: white;
-        }
+         
+      a{  
+        color: white;
       }
+      
     }     
   }  
   

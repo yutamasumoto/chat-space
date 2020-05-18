@@ -1,41 +1,39 @@
-
-%body
-  .MainChat  
-    .MainChat__Header
-      .MainChat__Header__Group
-        .MainChat__Header__Group__GroupName
-          ooo
-        %ul.MainChat__Header__Group__MemberList
-          Member:
-          %li.MainChat__Header__Group__Member
-            taro
-      .MainChat__Header__Edit-btn
-        =link_to "#" do
-          Edit
-    .MainChat__MessageField
-      .MainChat__MessageField__MessageBox
-        .MainChat__MessageField__MessageBox__MessageInfo
-          .MainChat__MessageField__MessageBox__MessageInfo__UserName
-            aaaaa
-          .MainChat__MessageField__MessageBox__MessageInfo__Date
-            2020年5月14日20時50分
-        .MainChat__MessageField__MessageBox__Message
-          ねむいよう
-      
-      .MainChat__MessageField__MessageBox
-        .MainChat__MessageField__MessageBox__MessageInfo
-          .MainChat__MessageField__MessageBox__MessageInfo__UserName
-            aaaaa
-          .MainChat__MessageField__MessageBox__MessageInfo__Date
-            2020年5月14日21時50分
-        .MainChat__MessageField__MessageBox__Message
-          がんばる
-    .MainChat__MessageForm
-      .MainChat__MessageForm__Contents
-        %input.MainChat__MessageForm__Contents__MessageBox{placeholder: "type a message"}
-        %label.MainChat__MessageForm__Contents__ImageIcon
+.MainChat  
+  .MainChat__Header
+    .MainChat__Header__Group
+      .MainChat__Header__Group__GroupName
+        ooo
+      %ul.MainChat__Header__Group__MemberList
+        Member:
+        %li.MainChat__Header__Group__Member
+          taro
+    .MainChat__Header__Edit-btn
+      =link_to "#" do
+        Edit
+  .MainChat__MessageField
+    .MainChat__MessageField__MessageBox
+      .MainChat__MessageField__MessageBox__MessageInfo
+        .MainChat__MessageField__MessageBox__MessageInfo__UserName
+          aaaaa
+        .MainChat__MessageField__MessageBox__MessageInfo__Date
+          2020年5月14日20時50分
+      .MainChat__MessageField__MessageBox__Message
+        ねむいよう
+    
+    .MainChat__MessageField__MessageBox
+      .MainChat__MessageField__MessageBox__MessageInfo
+        .MainChat__MessageField__MessageBox__MessageInfo__UserName
+          aaaaa
+        .MainChat__MessageField__MessageBox__MessageInfo__Date
+          2020年5月14日21時50分
+      .MainChat__MessageField__MessageBox__Message
+        がんばる
+  .MainChat__MessageForm
+    %form.Contents
+      .input-box
+        %input{type: "text",class:"input-box__text",placeholder: "type a message"}
+        %label{class:"input-box__image"}
           =icon('fas','image')
-          %input.MainChat__MessageForm__Contents__ImageIcon__File{type:"file"}
-      .MainChat__MessageForm__Submit-btn
-        =link_to "#" do
-          Send
+          %input{type:"file",class:"input-box__image__file"}
+      %input{type:"submit",class:"submit-btn"}
+      

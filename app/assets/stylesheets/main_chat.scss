@@ -1,5 +1,5 @@
 .MainChat{
-width: calc(100vw - 300px);
+  width: calc(100vw - 300px);
 
   &__Header{
     background-color:#ffffff ;
@@ -12,7 +12,7 @@ width: calc(100vw - 300px);
     &__Group{      
     
       &__GroupName{
-        color:#333333;
+        color: $name-color;
         font-size:20px;
         margin-top:35px;
       }  
@@ -50,7 +50,7 @@ width: calc(100vw - 300px);
         display:flex;
 
         &__UserName{
-          color:#333333;
+          color: $name-color;
           font-size:16px;
           font-weight: bold;
         }
@@ -71,49 +71,46 @@ width: calc(100vw - 300px);
   &__MessageForm{
     background-color: #d2d2d2;
     height:90px;
-    display:flex;
     padding:20px 50px 20px 40px;
-    justify-content: end;
-
-    &__Contents{
-      width: 100%;
+    
+    
+    form{
       display:flex;
-      position:relative;
-      
-      &__MessageBox{
-        width: 100%;
-        border: none;
-        height: 50px;
-        padding: 0 45px 0 15px;
-      }  
-      &__ImageIcon{
-        position:absolute;
-        right: 10px;
-        line-height: 50px;
-        font-size: 26px;
-      
-        &__File{
-          display:none;
-        }
-      }
-    }
-    &__Submit-btn{
-      display:block;
-      margin-left:15px;
-      background-color:#38AEF0;
-      border:none;
-      
-      font-size:16px;
-      height:50px;
-      padding: 0 30px;
-      line-height: 50px;  
-      
+      .input-box{
+        display:flex;  
+        width:100%;
+        position:relative;
+        &__text{
+          width: 100%;
+          border: none;
+          height: 50px;
+          padding: 0 45px 0 15px;
+          color:#434a54;
+        }  
+        &__image{
+          position:absolute;
+          right: 10px;
+          line-height: 50px;
+          font-size: 26px;
 
-      a{
-        color:#fff;
-        text-decoration:none;
+          &__file{
+            display:none;
+          }
+        }
+
+      }    
+      .submit-btn{
+        display:block;
+        margin-left:15px;
+        background-color:#38AEF0;
+        color:white;
+        border:none;
+        width:100px;
+        font-size:16px;
+        height:50px;
+        padding: 0 30px;
+        line-height: 50px;      
       }
-      
     }
   }
 }
