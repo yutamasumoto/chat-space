@@ -1,7 +1,7 @@
 .MainChat{
   width: calc(100vw - 300px);
   &__Header{
-    background-color:#ffffff ;
+    background-color:$white-color;
     height:100px;
     border-bottom: 1px solid #eeeeee;
     padding:0px 40px;
@@ -16,7 +16,7 @@
       }  
       &__MemberList{
         display:flex;
-        color:#999999;
+        color:$gray-color;
         font-size:12px;
         margin-top:15px;
       }
@@ -52,7 +52,7 @@
           font-weight: bold;
         }
         &__Date{
-          color:#999999;
+          color:$gray-color;
           font-size:12px;
           padding-left:10px;
         }
@@ -96,7 +96,7 @@
         display:block;
         margin-left:15px;
         background-color:$btn-color;
-        color:white;
+        color:$white-color;
         border:none;
         width:100px;
         font-size:16px;
