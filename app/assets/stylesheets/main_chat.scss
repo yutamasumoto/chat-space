@@ -9,8 +9,7 @@
     display:flex;
     justify-content: space-between;
 
-    &__Group{      
-    
+    &__Group{          
       &__GroupName{
         color: $name-color;
         font-size:20px;
@@ -23,10 +22,9 @@
         margin-top:15px;
       }
     }
-
     &__Edit-btn{
       display:block;
-      border:1px solid #38AEF0;
+      border:1px solid $btn-color;
       height:40px;
       line-height:40px;
       margin-top:28px;
@@ -34,7 +32,7 @@
       text-decoration:none;
     }
       a{
-        color:#38AEF0;
+        color:$btn-color;
         text-decoration:none;
       }
   }
@@ -65,15 +63,12 @@
         color:#434A54;
         font-size:14px;
       }
-
     }
   }
   &__MessageForm{
     background-color: #d2d2d2;
     height:90px;
-    padding:20px 50px 20px 40px;
-    
-    
+    padding:20px 50px 20px 40px;        
     form{
       display:flex;
       .input-box{
@@ -97,12 +92,11 @@
             display:none;
           }
         }
-
       }    
       .submit-btn{
         display:block;
         margin-left:15px;
-        background-color:#38AEF0;
+        background-color:$btn-color;
         color:white;
         border:none;
         width:100px;
