@@ -1,0 +1,44 @@
+.SideBar {
+    color:$white-color;
+    width:300px;
+     
+  &__Header{
+     background-color:#253141;
+     height:100px;
+     padding: 0 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+    &__UserName{
+    height:20px;
+    font-size: 16px;
+    }
+    &__Icon{
+    display: flex;
+    justify-content: end;
+    list-style:none;
+         
+      a{  
+        color:$white-color;
+      }
+      
+    }     
+  }  
+  
+  &__GroupList{
+    background-color:#2f3e51;
+    height: calc(100vh - 100px);
+    color:$white-color;
+    padding:20px 20px 40px;
+  
+    &__Name{
+    font-size: 15px;
+    }
+    &__Message{
+    font-size:11px;
+    margin-top: 5px;
+    }
+
+  }   
+}
