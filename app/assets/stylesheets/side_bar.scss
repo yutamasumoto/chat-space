@@ -31,14 +31,18 @@
     height: calc(100vh - 100px);
     color:$white-color;
     padding:20px 20px 40px;
-  
-    &__Name{
-    font-size: 15px;
-    }
-    &__Message{
-    font-size:11px;
-    margin-top: 5px;
-    }
 
+      .Group{  
+        a{
+          color:$white-color;
+        }
+          &__name{
+            font-size: 15px;
+          }
+          &__message{
+            font-size:11px;
+            margin-top: 5px;
+          }
+      }
   }   
 }
