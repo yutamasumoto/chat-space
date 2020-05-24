@@ -57,7 +57,7 @@
           padding-left:10px;
         }
       }
-      &__Message{
+      .Message{
         margin-top:12px;
         color:#434A54;
         font-size:14px;
@@ -68,7 +68,7 @@
     background-color: #d2d2d2;
     height:90px;
     padding:20px 50px 20px 40px;        
-    form{
+    .Form{
       display:flex;
       .input-box{
         display:flex;  
