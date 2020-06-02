@@ -2,9 +2,9 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="MessageBox">
+        `<div class="MessageBox" data-message-id=${message.id}>
           <div class="MessageInfo">
-            <div class="MessageInfo__UserName">
+            <div class="MessageInfo__userName">
               ${message.user_name}
             </div>
             <div class="MessageInfo__Date">
@@ -21,7 +21,7 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="MessageBox">
+      `<div class="MessageBox" data-message-id=${message.id}>
         <div class="MessageInfo">
           <div class="MessageInfo__UserName">
             ${message.user_name}
@@ -56,14 +56,13 @@ $(function(){
       let html = buildHTML(data);
       $('.MainChat__MessageField').append(html);      
       $('form')[0].reset();
-      $('.box').animate({'height' : '200px'});
-      $('.MainChat__MessageField').animate({ scrollTop: $('.MainChat__MessageField')[0].scrollHeight});
-    })
-    .always(function(){
-      $('.submit-btn').prop('disabled', false);
+      $('.MainChat__MessageField').animate({ scrollTop: $('.MainChat__MessageField')[0].scrollHeight});      
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
-    });
+    })
+    .always(function(){
+      $(".submit-btn").removeAttr("disabled");
+    });      
   });
 });
