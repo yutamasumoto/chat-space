@@ -14,11 +14,15 @@
         font-size:20px;
         margin-top:35px;
       }  
-      &__MemberList{
+      ul{
         display:flex;
         color:$gray-color;
         font-size:12px;
         margin-top:15px;
+
+        li{
+          padding-right: 5px;
+        }
       }
     }
     &__Edit-btn{
