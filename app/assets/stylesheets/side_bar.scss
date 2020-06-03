@@ -15,12 +15,10 @@
     font-size: 16px;
     }
     &__Icon{
-    display: flex;
-    justify-content: end;
-    list-style:none;
-         
+            
       a{  
         color:$white-color;
+        text-decoration: none;
       }
       
     }     
